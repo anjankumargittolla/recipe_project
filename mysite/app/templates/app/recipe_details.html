@@ -1,0 +1,8 @@
+{% if recipes %}
+{% for item in recipes %}
+<a href="/app/{{item.id}}/details/"> {{item.name}}</a><a href="/app/{{item.id}}/delete/">delete</a><br>
+{% endfor %}
+{% else %}
+<p>No data created</p>
+{% endif %}
+<br><a href="/app/create/">Add Recipe</a>
