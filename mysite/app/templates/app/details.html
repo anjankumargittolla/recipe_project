@@ -1,5 +1,6 @@
 name        : {{ recipes.name }}<br>
 ingredients : {{recipes.ingredients}}<br>
 process     : {{recipes.process}}<br>
-image       :  {{recipes.image}}<br>
-<a href="/app/recipe_list"> BACK </a>
+<img src="{{recipes.image.url}}" height="50px" width="50px"> <br>
+<a href="/app/recipe_list"> BACK </a><br>
+<button><a href="/app/logout/">LOGOUT</a></button>

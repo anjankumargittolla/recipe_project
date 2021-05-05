@@ -1,0 +1,8 @@
+<p style="color:green">Enter your login credentials</p>
+
+<form action="/app/check/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    username : <input type="text" name="username"><br>
+    password : <input type="password" name="password"><br>
+    <input type="submit" value="Login">
+</form>

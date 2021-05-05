@@ -1,0 +1,7 @@
+<form action="/app/check/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    username : <input type="text" name="username"><br>
+    password : <input type="text" name="password"><br>
+    user_email : <input type="text" name = "user_email"><br>
+    <input type="submit" value="Login">
+</form>
